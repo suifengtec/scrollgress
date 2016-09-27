@@ -85,7 +85,7 @@ Licensed under the MIT license
     		// divide the amount of pixels scrolled by the total height to scroll minus the height of the window
     		// and round the result to two decimal places
     		var percentScrolled = ((amountScrolled / (heightToScroll - windowHeight)) * 100).toFixed(2);
-
+            /*suifengtec: fixing the percentage issue.*/
             percentScrolled = (percentScrolled>100)?100:percentScrolled;
     		
     		/*console.log(e.originalEvent);*/
